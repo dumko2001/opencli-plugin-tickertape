@@ -1,5 +1,5 @@
 import { cli, Strategy } from '@jackwener/opencli/registry';
-import { GMS_BASE, fetchJson, normalizeTicker, parseCsv, requireRows } from './utils.js';
+import { GMS_BASE, fetchJson, normalizeTicker, parseCsv, requireRows } from './utils.mjs';
 
 function mapQuote(ticker, item) {
   const price = item?.p ?? null;

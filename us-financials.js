@@ -1,6 +1,6 @@
 import { cli, Strategy } from '@jackwener/opencli/registry';
 import { ArgumentError, CommandExecutionError } from '@jackwener/opencli/errors';
-import { GMS_BASE, WEB_BASE, fetchJson, fetchPageNextData, normalizeLimit, normalizeTicker, requireRows } from './utils.js';
+import { GMS_BASE, WEB_BASE, fetchJson, fetchPageNextData, normalizeLimit, normalizeTicker, requireRows } from './utils.mjs';
 
 const STATEMENTS = new Set(['income', 'balance', 'cashflow']);
 const PERIODS = new Set(['annual', 'quarterly']);

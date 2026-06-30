@@ -1,6 +1,6 @@
 import { cli, Strategy } from '@jackwener/opencli/registry';
 import { ArgumentError } from '@jackwener/opencli/errors';
-import { API_BASE, browserFetchJson, ensureTickertapePage, fetchJson, normalizeLimit, normalizeOffset, requireRows, rowFromScreenerResult } from './utils.js';
+import { API_BASE, browserFetchJson, ensureTickertapePage, fetchJson, normalizeLimit, normalizeOffset, requireRows, rowFromScreenerResult } from './utils.mjs';
 
 async function loadPrebuiltScreens() {
   const payload = await fetchJson(`${API_BASE}/screener/v2/prebuilt`, { bucket: 'screen-meta' });

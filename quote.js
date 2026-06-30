@@ -1,5 +1,5 @@
 import { cli, Strategy } from '@jackwener/opencli/registry';
-import { QUOTES_BASE, fetchJson, parseCsv, requireRows } from './utils.js';
+import { QUOTES_BASE, fetchJson, parseCsv, requireRows } from './utils.mjs';
 
 cli({
   site: 'tickertape',

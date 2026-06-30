@@ -14,7 +14,7 @@ import {
   requireRows,
   rowFromUsScreenerResult,
   uniqueProject,
-} from './utils.js';
+} from './utils.mjs';
 
 cli({
   site: 'tickertape',

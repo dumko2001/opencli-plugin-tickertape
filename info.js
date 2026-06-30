@@ -1,5 +1,5 @@
 import { cli, Strategy } from '@jackwener/opencli/registry';
-import { API_BASE, fetchJson, WEB_BASE } from './utils.js';
+import { API_BASE, fetchJson, WEB_BASE } from './utils.mjs';
 
 cli({
   site: 'tickertape',

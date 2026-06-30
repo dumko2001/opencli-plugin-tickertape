@@ -125,6 +125,13 @@ Most basic commands work without logging in.
 
 Commands that read your saved screens, watchlists, or Pro fields need your normal Tickertape browser session. OpenCLI uses your existing browser login; this plugin does not ask for your Tickertape password.
 
+For those account-backed commands, install and enable the OpenCLI browser extension too:
+
+- Recommended: install **OpenCLI** from the [Chrome Web Store](https://chromewebstore.google.com/detail/opencli/ildkmabpimmkaediidaifkhjpohdnifk)
+- Manual option: download the latest extension zip from the [OpenCLI releases page](https://github.com/jackwener/opencli/releases), unzip it, open `chrome://extensions`, turn on **Developer mode**, and choose **Load unpacked**
+
+If you see an "extension not connected" or browser-session error, open Chrome, make sure the OpenCLI extension is enabled, open Tickertape, and log in there normally.
+
 Check your session:
 
 ```bash

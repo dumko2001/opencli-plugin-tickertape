@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { getRegistry } from '@jackwener/opencli/registry';
 import { mapSearchPayload } from '../search.js';
+import { flattenNewsEventsPayload } from '../news-events.js';
 
 describe('tickertape search mapping', () => {
   it('maps the current Tickertape data.items search response', () => {
@@ -91,5 +92,41 @@ describe('tickertape plugin command registration', () => {
     expect(command?.access).toBe('read');
     expect(command?.browser).toBe(false);
     expect(command?.columns).toContain('ticker');
+  });
+});
+
+describe('tickertape news/events mapping', () => {
+  it('maps current homepage event rows nested under item.data', () => {
+    const rows = flattenNewsEventsPayload({
+      success: true,
+      data: {
+        all: [
+          {
+            type: 'news',
+            data: {
+              headline: 'Company announces new plan',
+              summary: 'Short summary',
+              publisher: 'Capital Market - Live',
+              date: '2026-06-30T13:23:00.000Z',
+              link: 'https://example.com/story',
+            },
+          },
+        ],
+      },
+    });
+
+    expect(rows).toEqual([
+      {
+        rank: 1,
+        category: 'news',
+        timing: null,
+        sid: null,
+        date: '2026-06-30T13:23:00.000Z',
+        title: 'Company announces new plan',
+        summary: 'Short summary',
+        source: 'Capital Market - Live',
+        url: 'https://example.com/story',
+      },
+    ]);
   });
 });

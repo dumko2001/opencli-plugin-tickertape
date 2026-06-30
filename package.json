@@ -24,13 +24,14 @@
   ],
   "files": [
     "*.js",
+    "*.mjs",
     "README.md",
     "STRATEGY.md",
     "LICENSE",
     "opencli-plugin.json"
   ],
   "scripts": {
-    "test": "vitest run --config tests/vitest.config.js",
+    "test": "npm exec vitest -- run --config tests/vitest.config.js",
     "smoke:public": "opencli tickertape search reliance -f json && opencli tickertape quote RELI -f json && opencli tickertape info RELI -f json && opencli tickertape us-info ACN -f json"
   },
   "peerDependencies": {

@@ -1,6 +1,6 @@
 import { cli, Strategy } from '@jackwener/opencli/registry';
 import { AuthRequiredError } from '@jackwener/opencli/errors';
-import { API_BASE, ECOSYSTEM_BASE, browserFetchJson, ensureTickertapePage } from './utils.js';
+import { API_BASE, ECOSYSTEM_BASE, browserFetchJson, ensureTickertapePage } from './utils.mjs';
 
 cli({
   site: 'tickertape',

@@ -1,5 +1,5 @@
 import { cli, Strategy } from '@jackwener/opencli/registry';
-import { API_BASE, browserFetchJson, ensureTickertapePage, normalizeLimit, normalizeOffset, parseCsv, parseJsonArg, parseSortOrder, requireRows, rowFromScreenerResult } from './utils.js';
+import { API_BASE, browserFetchJson, ensureTickertapePage, normalizeLimit, normalizeOffset, parseCsv, parseJsonArg, parseSortOrder, requireRows, rowFromScreenerResult } from './utils.mjs';
 
 const DEFAULT_PROJECT = ['subindustry', 'mrktCapf', 'lastPrice', 'pe', 'apef', 'pbr', 'roe', 'pr1d', '4wpct'];
 

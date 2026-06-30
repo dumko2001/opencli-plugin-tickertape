@@ -1,5 +1,5 @@
 import { cli, Strategy } from '@jackwener/opencli/registry';
-import { ECOSYSTEM_BASE, fetchJson, normalizeLimit, requireRows } from './utils.js';
+import { ECOSYSTEM_BASE, fetchJson, normalizeLimit, requireRows } from './utils.mjs';
 
 function firstDefined(...values) {
   return values.find((value) => value !== undefined && value !== null) ?? null;

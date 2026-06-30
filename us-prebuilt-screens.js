@@ -1,5 +1,5 @@
 import { cli, Strategy } from '@jackwener/opencli/registry';
-import { fetchUsPrebuiltScreens, normalizeLimit, requireRows } from './utils.js';
+import { fetchUsPrebuiltScreens, normalizeLimit, requireRows } from './utils.mjs';
 
 cli({
   site: 'tickertape',

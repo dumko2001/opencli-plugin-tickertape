@@ -1,5 +1,5 @@
 import { cli, Strategy } from '@jackwener/opencli/registry';
-import { GMS_BASE, WEB_BASE, fetchJson, normalizeTicker } from './utils.js';
+import { GMS_BASE, WEB_BASE, fetchJson, normalizeTicker } from './utils.mjs';
 
 function firstDefined(...values) {
   return values.find((value) => value !== undefined && value !== null) ?? null;

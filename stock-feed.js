@@ -1,6 +1,6 @@
 import { cli, Strategy } from '@jackwener/opencli/registry';
 import { CommandExecutionError } from '@jackwener/opencli/errors';
-import { ANALYZE_BASE, ANALYZE_FALLBACK_BASE, API_BASE, fetchJson, formatDate, normalizeLimit, normalizeOffset, normalizeSid, requireRows } from './utils.js';
+import { ANALYZE_BASE, ANALYZE_FALLBACK_BASE, API_BASE, fetchJson, formatDate, normalizeLimit, normalizeOffset, normalizeSid, requireRows } from './utils.mjs';
 
 function valueAt(item, names) {
   for (const name of names) {
@@ -73,7 +73,7 @@ cli({
     ];
     for (const base of bases) {
       const url = new URL(base);
-      url.searchParams.set('count', String(limit));
+      url.searchParams.set('limit', String(limit));
       url.searchParams.set('offset', String(offset));
       if (args.type) url.searchParams.set('type', String(args.type));
       const payload = await fetchFeed(url);

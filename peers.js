@@ -1,6 +1,6 @@
 import { cli, Strategy } from '@jackwener/opencli/registry';
 import { ArgumentError } from '@jackwener/opencli/errors';
-import { API_BASE, WEB_BASE, browserFetchJson, ensureTickertapePage, normalizeLimit, normalizeSid, requireRows } from './utils.js';
+import { API_BASE, WEB_BASE, browserFetchJson, ensureTickertapePage, normalizeLimit, normalizeSid, requireRows } from './utils.mjs';
 
 const TABS = ['valuation', 'technical', 'forecast'];
 
