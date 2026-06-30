@@ -1,0 +1,43 @@
+{
+  "name": "opencli-plugin-tickertape",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Unofficial OpenCLI plugin for Tickertape market data and screeners",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dumko2001/opencli-plugin-tickertape.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dumko2001/opencli-plugin-tickertape/issues"
+  },
+  "homepage": "https://github.com/dumko2001/opencli-plugin-tickertape#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "opencli",
+    "tickertape",
+    "stocks",
+    "screener",
+    "finance"
+  ],
+  "files": [
+    "*.js",
+    "README.md",
+    "STRATEGY.md",
+    "LICENSE",
+    "opencli-plugin.json"
+  ],
+  "scripts": {
+    "test": "vitest run --config tests/vitest.config.js",
+    "smoke:public": "opencli tickertape search reliance -f json && opencli tickertape quote RELI -f json && opencli tickertape info RELI -f json && opencli tickertape us-info ACN -f json"
+  },
+  "peerDependencies": {
+    "@jackwener/opencli": ">=1.8.4"
+  },
+  "devDependencies": {
+    "@jackwener/opencli": ">=1.8.4",
+    "vitest": "^4.1.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "tickertape",
+  "version": "0.1.0",
+  "description": "Unofficial Tickertape market data and screener commands",
+  "opencli": ">=1.8.4"
+}

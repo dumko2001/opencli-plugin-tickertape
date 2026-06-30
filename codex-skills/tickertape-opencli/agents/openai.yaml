@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tickertape OpenCLI"
+  short_description: "Run and maintain Tickertape OpenCLI commands"
+  default_prompt: "Use $tickertape-opencli to inspect or maintain the Tickertape OpenCLI plugin."
