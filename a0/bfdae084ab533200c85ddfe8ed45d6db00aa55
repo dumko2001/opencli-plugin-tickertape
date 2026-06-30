@@ -1,0 +1,75 @@
+LICENSE
+  s_5f5b60df99b8b3::t_8a37adee136072 1-190
+STRATEGY.md
+  s_5f5b60df99b8b3::t_2ca18a96d55536 1-80
+codex-skills/tickertape-opencli/agents/openai.yaml
+  s_5f5b60df99b8b3::t_b5fc301b30aa2f 1-4
+events.js
+  s_5f5b60df99b8b3::t_b0d2b32538627c 1-68
+filters.js
+  s_5f5b60df99b8b3::t_fe1648204aba6b 1-43
+financials.js
+  s_5f5b60df99b8b3::t_83205d1fd1423a 1-119
+info.js
+  s_5f5b60df99b8b3::t_f6d0bbb2d26720 1-39
+login.js
+  s_5f5b60df99b8b3::t_aaabc2f0074e0c 1-60
+news-events.js
+  s_5f5b60df99b8b3::t_02a41f9592a1a8 1-100
+package-lock.json
+  s_5f5b60df99b8b3::t_292cdfb27947c4 1-1488
+peers.js
+  s_5f5b60df99b8b3::t_dee96cc6949475 1-62
+prebuilt-screens.js
+  s_5f5b60df99b8b3::t_53f774be78a147 1-41
+quote.js
+  s_5f5b60df99b8b3::t_b6165654b2d6db 1-37
+screen.js
+  s_5f5b60df99b8b3::t_db39d8590b890d 1-75
+screener.js
+  s_5f5b60df99b8b3::t_30230357f3c021 1-45
+screens.js
+  s_5f5b60df99b8b3::t_fa3b4c3f4337b0 1-31
+search.js
+  s_5f5b60df99b8b3::t_07f49034e58301 1-57
+stock-feed.js
+  s_5f5b60df99b8b3::t_142a694e5e9385 1-88
+tests/search.test.js
+  s_5f5b60df99b8b3::t_c1739edb359eca 1-95
+tests/vitest.config.js
+  s_5f5b60df99b8b3::t_19380b6720d873 1-8
+us-filters.js
+  s_5f5b60df99b8b3::t_60e09d296e5cbc 1-84
+us-financials.js
+  s_5f5b60df99b8b3::t_8e43a3aec515d0 1-109
+us-info.js
+  s_5f5b60df99b8b3::t_5331d8abcb4d35 1-49
+us-prebuilt-screens.js
+  s_5f5b60df99b8b3::t_a3147bd174e472 1-46
+us-quote.js
+  s_5f5b60df99b8b3::t_2fa0e8fb06ab9e 1-42
+us-screen.js
+  s_5f5b60df99b8b3::t_11aab265cd573b 1-68
+us-screener.js
+  s_5f5b60df99b8b3::t_52c49ab8d78cae 1-59
+utils.js
+  s_5f5b60df99b8b3::t_4a5963b22bb7b5 1-527
+watchlist.js
+  s_5f5b60df99b8b3::t_81a780e0cb895a 1-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.4",
+  "base_commit_sha": "a0bfdae084ab533200c85ddfe8ed45d6db00aa55",
+  "prompts": {},
+  "sessions": {
+    "s_5f5b60df99b8b3": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f18af-5f78-7523-a5cc-db6fda8e8de9",
+        "model": "gpt-5.5"
+      },
+      "human_author": "dumko2001 <dumko.raj@gmail.com>"
+    }
+  }
+}
